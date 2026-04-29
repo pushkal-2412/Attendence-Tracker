@@ -1,0 +1,158 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.navbar button {
+  background: #ef4444;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== CENTER ALL CONTENT ===== */
+.container,
+.login-container {
+  min-height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CARD (USED EVERYWHERE) ===== */
+.card,
+.login-card {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 35px;
+  border-radius: 15px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== TITLES ===== */
+.card h3,
+.login-card h1 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #94a3b8;
+}
+
+/* ===== INPUTS ===== */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #334155;
+  color: white;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* LOGIN BUTTON */
+.login-card button {
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== SUBJECT BUTTONS ===== */
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.subject-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #334155;
+  color: white;
+  cursor: pointer;
+}
+
+.subject-btn:hover {
+  background: #2563eb;
+}
+
+.subject-btn.active {
+  background: #22c55e;
+}
+
+/* ===== MARK BUTTON ===== */
+.mark-btn {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.mark-btn:hover {
+  transform: scale(1.03);
+}
+
+/* ===== MESSAGE ===== */
+.card p:last-of-type {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* ===== ATTENDANCE CARDS ===== */
+.history {
+  margin-top: 15px;
+  background: #334155;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
+  border-left: 4px solid #22c55e;
+}
+
+.history strong {
+  color: #22c55e;
+}
+
+/* ===== LINKS ===== */
+span {
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+span:hover {
+  text-decoration: underline;
+}
